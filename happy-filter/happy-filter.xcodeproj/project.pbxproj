@@ -14,6 +14,7 @@
 		5013F72C1BC101CA005F7D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5013F72A1BC101CA005F7D97 /* LaunchScreen.storyboard */; };
 		5013F7381BC10E21005F7D97 /* jquery-2.1.4.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 5013F7371BC10E21005F7D97 /* jquery-2.1.4.min.js */; settings = {ASSET_TAGS = (); }; };
 		5013F73C1BC1139E005F7D97 /* hello-alret.js in Resources */ = {isa = PBXBuildFile; fileRef = 5013F73B1BC1139E005F7D97 /* hello-alret.js */; settings = {ASSET_TAGS = (); }; };
+		5013F7401BD22BF1005F7D97 /* positive-filter.js in Resources */ = {isa = PBXBuildFile; fileRef = 5013F73F1BD22BF1005F7D97 /* positive-filter.js */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5013F72D1BC101CA005F7D97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5013F7371BC10E21005F7D97 /* jquery-2.1.4.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.4.min.js"; sourceTree = "<group>"; };
 		5013F73B1BC1139E005F7D97 /* hello-alret.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "hello-alret.js"; sourceTree = "<group>"; };
+		5013F73F1BD22BF1005F7D97 /* positive-filter.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "positive-filter.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		5013F7351BC10DF7005F7D97 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5013F73F1BD22BF1005F7D97 /* positive-filter.js */,
 				5013F7371BC10E21005F7D97 /* jquery-2.1.4.min.js */,
 				5013F73B1BC1139E005F7D97 /* hello-alret.js */,
 			);
@@ -140,6 +143,7 @@
 				5013F72C1BC101CA005F7D97 /* LaunchScreen.storyboard in Resources */,
 				5013F7291BC101CA005F7D97 /* Assets.xcassets in Resources */,
 				5013F7271BC101CA005F7D97 /* Main.storyboard in Resources */,
+				5013F7401BD22BF1005F7D97 /* positive-filter.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				5013F7321BC101CA005F7D97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

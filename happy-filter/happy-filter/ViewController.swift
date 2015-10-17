@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         // リクエストを生成する
-        let url = NSURL(string: "http://www.nikkansports.com/baseball/news/1536230.html")
+        let url = NSURL(string: "http://headlines.yahoo.co.jp/hl?a=20151015-00000047-spnannex-base")
         let request = NSURLRequest(URL: url!)
         
         // 指定したページを読み込む
@@ -40,8 +40,8 @@ class ViewController: UIViewController, UIWebViewDelegate {
         let jQuery = self.readFileText("jquery-2.1.4.min")
         self.webview.stringByEvaluatingJavaScriptFromString(jQuery)
 
-        let hello = self.readFileText("hello-alret")
-        self.webview.stringByEvaluatingJavaScriptFromString(hello)
+        let filter = self.readFileText("positive-filter")
+        self.webview.stringByEvaluatingJavaScriptFromString(filter)
     }
     
     private func readFileText(resName: String) -> String {
