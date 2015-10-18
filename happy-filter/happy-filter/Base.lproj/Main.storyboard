@@ -23,8 +23,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="71Y-1n-3dQ">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
                                         <subviews>
-                                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-4G-d8p">
-                                                <rect key="frame" x="0.0" y="0.0" width="560" height="580"/>
+                                            <searchBar contentMode="redraw" misplaced="YES" placeholder="URLを入力してください。" translatesAutoresizingMaskIntoConstraints="NO" id="9uF-mE-8FJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="39"/>
+                                                <animations/>
+                                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                                            </searchBar>
+                                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-4G-d8p">
+                                                <rect key="frame" x="0.0" y="39" width="560" height="541"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </webView>
@@ -45,11 +50,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Searchbar" destination="9uF-mE-8FJ" id="rRN-m5-QZV"/>
                         <outlet property="webview" destination="aYe-4G-d8p" id="dBe-Nu-zlB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="288" y="307"/>
         </scene>
     </scenes>
 </document>
