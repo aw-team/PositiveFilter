@@ -4,7 +4,6 @@
      {key: '敗戦', filtered: '惜敗'},
      {key: '最下位', filtered: '追う立場'},
      {key: '暴投', filtered: '惜しい投球'},
-     {key: '成功', filtered: '大成功'},
      {key: '負けっぷり', filtered: '清々しい負け'},
      {key: '力不足', filtered: '力不足は否めないが今後に期待'},
      {key: '落胆', filtered: '反省を次回へ持ち越した'},
@@ -14,16 +13,14 @@
      {key: 'ワイルドピッチ', filtered: '気持ちズレた球'},
      {key: 'DeNA', filtered: 'あの天下のDeNA'},
      {key: 'ＤｅＮＡ', filtered: 'あの天下のＤｅＮＡ'},
-     {key: 'ワースト', filtered: 'スタートライン'},
-     {key: 'タイ', filtered: 'トムヤムクン'},
-     {key: '転落', filtered: 'スライド'},
-     {key: '不名誉', filtered: '煌びやかな'},
-     {key: '記録', filtered: '大記録'},
+     {key: 'ワースト', filtered: '逆1位'},
+     {key: '転落', filtered: '移動'},
+     {key: '不名誉', filtered: '煌びやか'},
      {key: 'スライダー', filtered: '切れ味鋭いスライダー'},
      {key: '代打', filtered: '代打のリーサルウェポン'},
      {key: 'エラー', filtered: 'どんまい'},
      {key: '監督', filtered: 'スーパーバイザー'},
-     {key: 'ギブアップ', filtered: 'ユースケサンタマリア'}
+     {key: 'ギブアップ', filtered: 'バンザイ'}               
    ];
  
    convTable.forEach(function(conv) {
