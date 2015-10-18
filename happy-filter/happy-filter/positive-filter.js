@@ -28,11 +28,11 @@
  
    convTable.forEach(function(conv) {
      $('.text').each(function(index, elem) {
-       $(elem).html($(elem).html().replace(conv.key, conv.filtered));
+       $(elem).html($(elem).html().replace(new RegExp(conv.key, 'g'), conv.filtered));
      });
 
      $('.title').each(function(index, elem) {
-       $(elem).html($(elem).html().replace(conv.key, conv.filtered));
+       $(elem).html($(elem).html().replace(new RegExp(conv.key, 'g'), conv.filtered));
      });
    });
 })();
