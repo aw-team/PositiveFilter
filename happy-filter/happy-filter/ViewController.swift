@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         // リクエストを生成する
-        let url = NSURL(string: "http://headlines.yahoo.co.jp/hl?a=20151015-00000047-spnannex-base")
+        let url = NSURL(string: "http://headlines.yahoo.co.jp/hl?a=20150929-00000102-dal-base")
         let request = NSURLRequest(URL: url!)
         
         // 指定したページを読み込む
