@@ -8,25 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate {
+class ViewController: UIViewController, UIWebViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var webview: UIWebView!
+    @IBOutlet weak var Searchbar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        webview.delegate = self
+        Searchbar.delegate = self
         
         // リクエストを生成する
-        let url = NSURL(string: "http://headlines.yahoo.co.jp/hl?a=20150929-00000102-dal-base")
-        let request = NSURLRequest(URL: url!)
-        
-        // 指定したページを読み込む
-        webview.delegate = self
-        webview.loadRequest(request)
+        let urlStr = "http://headlines.yahoo.co.jp/hl?a=20150929-00000102-dal-base"
+        self.loadWebPage(urlStr)
+        Searchbar.text = urlStr
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //サーチボタンクリック時(UISearchBarDelegateを関連づけておく必要があります）
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        self.isFirst = true
+        
+        let urlStr: String? = Searchbar.text
+        self.loadWebPage(urlStr!)
     }
     
     private var isFirst = true
@@ -55,6 +64,15 @@ class ViewController: UIViewController, UIWebViewDelegate {
         }
         
         return str
+    }
+    
+    private func loadWebPage(urlStr: String) {
+        
+        let url = NSURL(string: urlStr)
+        let request = NSURLRequest(URL: url!)
+        
+        // 指定したページを読み込む
+        webview.loadRequest(request)
     }
 }
 
