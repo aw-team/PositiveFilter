@@ -13,6 +13,7 @@
      {key: '厳しい', filtered: '愛くるしい'},
      {key: 'ワイルドピッチ', filtered: '気持ちズレた球'},
      {key: 'DeNA', filtered: 'あの天下のDeNA'},
+     {key: 'ＤｅＮＡ', filtered: 'あの天下のＤｅＮＡ'},
      {key: 'ワースト', filtered: 'スタートライン'},
      {key: 'タイ', filtered: 'トムヤムクン'},
      {key: '転落', filtered: 'スライド'},
